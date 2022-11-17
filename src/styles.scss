@@ -1,0 +1,159 @@
+/* You can add global styles to this file, and also import other style files */
+#top-nav a.quick-nav {
+  margin: 0 0 0 15px;
+  color: #fff;
+  background-color: #e00000;
+  padding: 0.7rem;
+  font-family: poppins;
+  letter-spacing: 0.5px;
+  border-radius: 45px;
+  width: 12rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+
+
+.home-shortcuts {
+  margin: 0;
+  background: #000000;
+  color: #fff;
+  padding: 3rem;
+}
+
+section#home-banner {
+  margin: 0;
+  padding: 50px 0 60px;
+  background-color: #2E363F;
+  color: #fff;
+  margin-top: 7rem;
+}
+
+.h2, h2 {
+  font-size: 40px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 10px;
+  font-family: 'Poppins';
+}
+
+.AppForm .AppFormLeft button {
+  background: linear-gradient(45deg, #ff0000, #020936);
+  border-radius: 30px;
+  height: 5rem;
+}
+
+
+summary-container {
+  margin: 0;
+  padding: 10px;
+  min-height: 100px;
+  border-radius: 3px;
+  background-color: #f8f8f8;
+  font-size: .8em;
+}
+
+#order-standard_cart {
+  margin: auto !important;
+  padding: 0 0 40px 0;
+  margin-top: 10rem !important;
+}
+
+#order-standard_cart .products .product header {
+  position: relative;
+  padding: 10px 12px;
+  margin: 0 1px;
+  background: #f8f8f8;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+
+.g_button {
+  background-color: #ff0000;
+  border: none;
+  padding: 1rem;
+  font-family: 'Poppins';
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.g_button:hover {
+  background-color: #000;
+  border: none;
+  padding: 1rem;
+  font-family: 'Poppins';
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-decoration-line: none;
+}
+
+#order-standard_cart .products .product div.product-pricing span.price {
+  font-size: 2em;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+.p_text {
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+  text-shadow: 0 -1px 0 #000000;
+  background-image: -webkit-linear-gradient(top,#337ab7 0,#2b669a 100%);
+  background-image: -o-linear-gradient(top,#337ab7 0,#2b669a 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2b669a));
+  background-image: linear-gradient(to bottom,#000000 0,#000000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+  background-repeat: repeat-x;
+  border-color: #2b669a;
+  padding: 1.5rem;
+  letter-spacing: 0.5px;
+  font-family: 'Poppins';
+  font-size: 14px;
+}
+
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  color: inherit;
+  font-family: 'Poppins';
+  font-weight: bold;
+}
+
+.panel {
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  box-shadow: 0 1px 1pxrgba(0,0,0,.05);
+  line-height: 2;
+}
+
+
+#order-standard_cart .products .product {
+  margin: 0 0 20px 0;
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  padding: 2rem;
+}
+
+section#footer p {
+  margin: 25px 0 0 0;
+  border-top: 1px solid #000000;
+  line-height: 40px;
+  color: #666;
+  font-size: 0.7em;
+  text-align: center;
+}

@@ -1,0 +1,222 @@
+<section id="main-body" class="container">
+
+    <div class="row">
+        <!-- Container for main page display content -->
+        <div class="col-xs-12 main-content">
+
+
+
+            <div id="order-standard_cart">
+
+                <div class="row">
+
+
+                    <div class="col-md-3 pull-md-left sidebar hidden-xs hidden-sm">
+
+                        <div menuitemname="Categories" class="panel panel-sidebar">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;
+
+                                    Categories
+
+
+                                    <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+                                </h3>
+                            </div>
+
+
+                            <div class="list-group">
+                                <a menuitemname="LiveStreaming" href="/cart.php?gid=1" class="list-group-item active"
+                                    id="Secondary_Sidebar-Categories-LiveStreaming">
+
+                                    LiveStreaming
+
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div menuitemname="Actions" class="panel panel-sidebar">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">
+                                    <i class="fas fa-plus"></i>&nbsp;
+
+                                    Actions
+
+
+                                    <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+                                </h3>
+                            </div>
+
+
+                            <div class="list-group">
+                                <a menuitemname="View Cart" href="/cart.php?a=view" class="list-group-item"
+                                    id="Secondary_Sidebar-Actions-View_Cart" style=" font-family: Poppins; font-size: 15px; font-weight: bold; color: #2d2d2d;">
+                                    <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+
+                                    View Cart
+
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-md-9 pull-md-right">
+
+                            <div class="header-lined">
+                                <h2>Choose a Domain...</h2>
+                            </div>
+                
+                        <div class="categories-collapsed visible-xs visible-sm clearfix">
+
+                            <div class="pull-left form-inline">
+                                <form method="get" action="/cart.php">
+                                    <select name="gid" onchange="submit()" class="form-control">
+                                        <optgroup label="Product Categories">
+                                            <option value="1">Live Streaming</option>
+                                        </optgroup>
+                                        <optgroup label="Actions">
+                                            <option value="viewcart">View Cart</option>
+                                        </optgroup>
+                                    </select>
+                                </form>
+                            </div>
+
+
+                        </div>
+
+                        <form id="frmProductDomain">
+                            <input type="hidden" id="frmProductDomainPid" value="61">
+                            <div class="domain-selection-options">
+                                <div class="option">
+                                    <label class="">
+                                        <div class="iradio_square-blue checked" id="iCheck-selsubdomain"
+                                            style="position: relative;"><input type="radio" name="domainoption"
+                                                value="subdomain" id="selsubdomain" checked=""
+                                                style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"><ins
+                                                class="iCheck-helper"
+                                                style="position: absolute; top: -20%; left: -20%; display: block; width: 140%; height: 140%; margin: 0px; padding: 0px; background: rgb(255, 255, 255); border: 0px; opacity: 0;"></ins>
+                                        </div>Use a subdomain from Home Live Events Streaming Solutions
+                                    </label>
+                                    <div class="domain-input-group clearfix" id="domainsubdomain"
+                                        style="display: block;">
+                                        <div class="row">
+                                            <div class="col-sm-9">
+                                                <div class="row ">
+                                                    <div class="col-sm-2">
+                                                        <p class="form-control-static">http://</p>
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <input type="text" id="subdomainsld" value=""
+                                                            placeholder="Your Name" class="form-control"
+                                                            autocapitalize="none"
+                                                            data-placement="top" data-trigger="manual" title=""
+                                                            data-original-title="Please enter your domain">
+                                                    </div>
+                                                    <div class="col-sm-5">
+                                                        <select id="subdomaintld" class="form-control">
+                                                            <option value="0">homeliveevents.com</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <button type="submit" class="g_button btn-block" routerLink="/cart">
+                                                    Check
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                        <div class="clearfix"></div>
+                        <form method="post" action="cart.php?a=add&amp;pid=61&amp;domainselect=1"
+                            id="frmProductDomainSelections">
+                            <input type="hidden" name="token" value="3a4326e0cee39775d093b97b1c2f9cdba2181a54">
+
+                            <div id="DomainSearchResults" class="hidden">
+
+                                <div id="searchDomainInfo">
+                                    <p id="primaryLookupSearching"
+                                        class="domain-lookup-loader domain-lookup-primary-loader domain-searching domain-checker-result-headline">
+                                        <i class="fas fa-spinner fa-spin"></i>
+                                        <span class="domain-lookup-register-loader">Checking availability...</span>
+                                        <span class="domain-lookup-transfer-loader">Verifying transfer
+                                            eligibility...</span>
+                                        <span class="domain-lookup-other-loader">Verifying your domain
+                                            selection...</span>
+                                    </p>
+                                    <div id="primaryLookupResult"
+                                        class="domain-lookup-result domain-lookup-primary-results hidden">
+                                        <div class="domain-unavailable domain-checker-unavailable headline">
+                                            <strong>:domain</strong> is unavailable</div>
+                                        <div class="domain-available domain-checker-available headline">Congratulations!
+                                            <strong></strong> is available!</div>
+                                        <div class="btn btn-primary domain-contact-support headline">Contact Us</div>
+                                        <div class="transfer-eligible">
+                                            <p class="domain-checker-available headline">Your domain is eligible for
+                                                transfer</p>
+                                            <p>Please ensure you have unlocked your domain at your current registrar
+                                                before continuing.</p>
+                                        </div>
+                                        <div class="transfer-not-eligible">
+                                            <p class="domain-checker-unavailable headline">Not Eligible for Transfer</p>
+                                            <p>The domain you entered does not appear to be registered.</p>
+                                            <p>If the domain was registered recently, you may need to try again later.
+                                            </p>
+                                            <p>Alternatively, you can perform a search to register this domain.</p>
+                                        </div>
+                                        <div class="domain-invalid">
+                                            <p class="domain-checker-unavailable headline">Invalid domain name provided
+                                            </p>
+                                            <p>
+                                                Domains must begin with a letter or a number<span
+                                                    class="domain-length-restrictions"> and be between <span
+                                                        class="min-length"></span> and <span class="max-length"></span>
+                                                    characters in length</span><br>
+                                                Please check your entry and try again.
+                                            </p>
+                                        </div>
+                                        <div class="domain-price">
+                                            <span class="register-price-label">Continue to register this domain
+                                                for</span>
+                                            <span class="transfer-price-label hidden">Transfer to us and extend by 1
+                                                year* for</span>
+                                            <span class="price"></span>
+                                        </div>
+                                        <p class="domain-error domain-checker-unavailable headline"></p>
+                                        <input type="hidden" id="resultDomainOption" name="domainoption">
+                                        <input type="hidden" id="resultDomain" name="domains[]">
+                                        <input type="hidden" id="resultDomainPricingTerm">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="text-center">
+                                <button id="btnDomainContinue" type="submit" class="btn btn-primary btn-lg hidden"
+                                    disabled="disabled">
+                                    Continue
+                                    &nbsp;<i class="fas fa-arrow-circle-right"></i>
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div><!-- /.main-content -->
+    </div>
+    <div class="clearfix"></div>
+</section>

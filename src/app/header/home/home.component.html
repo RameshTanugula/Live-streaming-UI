@@ -1,0 +1,339 @@
+
+
+  
+
+
+  <!--<section id="main-menu">
+
+      <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+          <div class="container">
+
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                      data-target="#bs-example-navbar-collapse-1">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                  <ul class="nav navbar-nav">
+
+                      <li menuitemname="Home" id="Primary_Navbar-Home">
+                          <a href="/index.php">
+                              Home
+                          </a>
+                      </li>
+                      <li menuitemname="Store" class="dropdown" id="Primary_Navbar-Store">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                              Store
+                              &nbsp;<b class="caret"></b> </a>
+                          <ul class="dropdown-menu">
+                              <li menuitemname="Browse Products Services"
+                                  id="Primary_Navbar-Store-Browse_Products_Services">
+                                  <a href="/cart.php">
+                                      Browse All
+                                  </a>
+                              </li>
+                              <li menuitemname="Shop Divider 1" class="nav-divider"
+                                  id="Primary_Navbar-Store-Shop_Divider_1">
+                                  <a href="">
+                                      -----
+                                  </a>
+                              </li>
+                              <li menuitemname="LiveStreaming" id="Primary_Navbar-Store-LiveStreaming">
+                                  <a href="/cart.php?gid=1">
+                                      LiveStreaming
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+                      <li menuitemname="Announcements" id="Primary_Navbar-Announcements">
+                          <a href="/index.php?rp=/announcements">
+                              Announcements
+                          </a>
+                      </li>
+                      <li menuitemname="Knowledgebase" id="Primary_Navbar-Knowledgebase">
+                          <a href="/index.php?rp=/knowledgebase">
+                              Knowledgebase
+                          </a>
+                      </li>
+                      <li menuitemname="Network Status" id="Primary_Navbar-Network_Status">
+                          <a href="/serverstatus.php">
+                              Network Status
+                          </a>
+                      </li>
+                      <li menuitemname="Affiliates" id="Primary_Navbar-Affiliates">
+                          <a href="/affiliates.php">
+                              Affiliates
+                          </a>
+                      </li>
+                      <li menuitemname="Contact Us" id="Primary_Navbar-Contact_Us">
+                          <a href="/contact.php">
+                              Contact Us
+                          </a>
+                      </li>
+
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+
+                      <li menuitemname="Account" class="dropdown" id="Secondary_Navbar-Account">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                              Account
+                              &nbsp;<b class="caret"></b> </a>
+                          <ul class="dropdown-menu">
+                              <li menuitemname="Login" id="Secondary_Navbar-Account-Login" routerLink="/Login">
+                                  <a href="/clientarea.php">
+                                      Login
+                                  </a>
+                              </li>
+                              <li menuitemname="Divider" class="nav-divider" id="Secondary_Navbar-Account-Divider">
+                                  <a href="">
+                                      -----
+                                  </a>
+                              </li>
+                              <li menuitemname="Forgot Password?" id="Secondary_Navbar-Account-Forgot_Password?">
+                                  <a href="/index.php?rp=/password/reset/begin">
+                                      Forgot Password?
+                                  </a>
+                              </li>
+                          </ul>
+                      </li>
+
+                  </ul>
+
+              </div>
+          </div>
+      </nav>
+
+  </section>-->
+
+  <section id="home-banner">
+    <div class="container text-center">
+      <h2>What would you like to do today?</h2>
+    </div>
+  </section>
+  <div class="home-shortcuts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 hidden-sm hidden-xs text-center">
+          <p class="lead">
+            How can we help today?
+          </p>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <ul>
+            <li>
+              <a id="btnOrderHosting" routerLink="/Domain">
+                <i class="fa fa-hdd"></i>
+                <p>
+                  Order Hosting <span>»</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a id="btnMakePayment" routerLink="/Login">
+                <i class="fa fa-credit-card"></i>
+                <p>
+                  Make Payment <span>»</span>
+                </p>
+              </a>
+            </li>
+            <li>
+              <a id="btnGetSupport" href="submitticket.php">
+                <i class="fa fa-envelope-o"></i>
+                <p>
+                  Get Support <span>»</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="main-body" class="container">
+
+    <div class="row">
+      <!-- Container for main page display content -->
+      <div class="col-xs-12 main-content">
+
+
+
+        <h2>Our Latest Tweets</h2>
+
+        <div id="twitterFeedOutput">
+          <p>
+            Follow us @ <a href="#"
+                           target="_blank">http://twitter.com/@HomeLiveEvents</a> to stay up to date with our latest
+            news &amp; offers
+          </p>
+        </div>
+
+        <script type="text/javascript" src="templates/viewlive/js/twitter.js"></script>
+
+
+
+
+      </div><!-- /.main-content -->
+    </div>
+    <div class="clearfix"></div>
+  </section>
+
+  <section id="footer">
+
+    <p>Copyright © 2022 Home Live Events Streaming Solutions. All Rights Reserved.</p>
+
+  </section>
+
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    var csrfToken = 'b7ef17ecc02fa35d936fca6aa87f2174ee3b7532',
+      markdownGuide = 'Markdown Guide',
+      locale = 'en_GB',
+      saved = 'saved',
+      saving = 'autosaving';
+  </script>
+  <script src="/templates/viewlive/js/whmcs.js"></script>
+  <script src="/assets/js/AjaxModal.js"></script>
+
+  <div class="modal system-modal fade" id="modalAjax" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content panel panel-primary">
+        <div class="modal-header panel-heading">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">×</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title">Title</h4>
+        </div>
+        <div class="modal-body panel-body">
+          Loading...
+        </div>
+        <div class="modal-footer panel-footer">
+          <div class="pull-left loader">
+            <i class="fa fa-circle-o-notch fa-spin"></i> Loading...
+          </div>
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary modal-submit">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#hook-modal	').modal('show');
+    });
+
+    $("#resend-otp").click(function (e) {
+
+      $.ajax({
+        url: 'clientarea.php',
+        type: 'post',
+        data: { "otp_id": $("input[name=otp_id]").val(), "action": "resendOtp" },
+        //async: false,
+        beforeSend: function () {
+          //Can we add anything here.
+        },
+        cache: true,
+        dataType: 'json',
+        crossDomain: true,
+        success: function (data) {
+          console.log(data);
+          if (data.code == 1) {
+
+            swal({
+              title: "Success!",
+              text: data.message,
+              type: "success"
+            }, function () {
+              window.location = "clientarea.php";
+            });
+
+          } else {
+            bootbox.alert(data.message);
+          }
+        },
+        error: function (data) {
+          console.log('Error:', data);
+        }
+      });
+
+
+    });
+
+    function checkOtpForm(elements) {
+
+      if (elements.otp.value == '') {
+        bootbox.alert("Please Enter OTP Number");
+        elements.otp.focus();
+      } else {
+
+        $.ajax({
+          url: 'clientarea.php',
+          type: 'post',
+          data: $(elements).serialize(),
+          //async: false,
+          beforeSend: function () {
+            //Can we add anything here.
+          },
+          cache: true,
+          dataType: 'json',
+          crossDomain: true,
+          success: function (data) {
+            console.log(data);
+            if (data.code == 1) {
+
+              swal({
+                title: "Success!",
+                text: data.message,
+                type: "success"
+              }, function () {
+                window.location = "clientarea.php";
+              });
+
+            } else {
+              bootbox.alert(data.message);
+            }
+          },
+          error: function (data) {
+            console.log('Error:', data);
+          }
+        });
+
+
+      }
+
+      return false;
+    }
+
+  </script>
+
+
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/5855197ce7588f121244ccd0/default';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->

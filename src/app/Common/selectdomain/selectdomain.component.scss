@@ -1,0 +1,22 @@
+ .domains-row {
+    margin-right: -2px;
+    margin-left: -2px;
+}
+.col-sm-2 {
+    text-align: right;
+}
+
+#order-standard_cart .field, #order-standard_cart .form-control {
+  position: relative;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  display: -moz-inline-stack;
+  display: inline-block;
+  color: #626262;
+  outline: 0;
+  background-color: #fff;
+  height: 43px !important;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 13px;
+}

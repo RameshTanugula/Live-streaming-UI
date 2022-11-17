@@ -1,0 +1,352 @@
+
+
+
+<section id="main-menu">
+
+  <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+
+    </div>
+  </nav>
+
+</section>
+
+
+
+<section id="main-body" class="container">
+
+  <div class="row">
+    <!-- Container for main page display content -->
+    <div class="col-xs-12 main-content">
+
+
+      <link rel="stylesheet" type="text/css" href="/templates/orderforms/standard_cart/css/all.min.css?v=736f05">
+      <script type="text/javascript" src="/templates/orderforms/standard_cart/js/scripts.min.js?v=736f05"></script>
+
+      <script>
+        var _localLang = {
+          'addToCart': 'Add to Cart',
+          'addedToCartRemove': 'Added to Cart (Remove)'
+        }
+      </script>
+
+      <div id="order-standard_cart">
+
+        <div class="row">
+
+
+          <div class="col-md-3 ">
+
+            <div menuitemname="Categories" class="panel panel-sidebar">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <i class="fas fa-shopping-cart"></i>&nbsp;
+
+                  Categories
+
+
+                  <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+                </h3>
+              </div>
+
+
+              <div class="list-group">
+                <a menuitemname="LiveStreaming" href="/cart.php?gid=1" class="list-group-item"
+                   id="Secondary_Sidebar-Categories-LiveStreaming">
+
+                  LiveStreaming
+
+                </a>
+              </div>
+
+            </div>
+
+            <div menuitemname="Actions" class="panel panel-sidebar">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <i class="fas fa-plus"></i>&nbsp;
+
+                  Actions
+
+
+                  <i class="fas fa-chevron-up panel-minimise pull-right"></i>
+                </h3>
+              </div>
+
+
+              <div class="list-group">
+                <a menuitemname="View Cart" href="/cart.php?a=view" class="list-group-item"
+                   id="Secondary_Sidebar-Actions-View_Cart" style="font-family: Poppins; font-size: 15px; font-weight: bold; color: #2d2d2d;">
+                  <i class="fas fa-shopping-cart fa-fw"></i>&nbsp;
+
+                  View Cart
+
+                </a>
+              </div>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-md-9 pull-md-right">
+            <div class="header-lined">
+              <h2>Configure</h2>
+            </div>
+            <div class="categories-collapsed visible-xs visible-sm clearfix">
+
+              <div class="pull-left form-inline">
+                <form method="get" action="/cart.php">
+                  <select name="gid" onchange="submit()" class="form-control">
+                    <optgroup label="Product Categories">
+                      <option value="1">Live Streaming</option>
+                    </optgroup>
+                    <optgroup label="Actions">
+                      <option value="viewcart">View Cart</option>
+                    </optgroup>
+                  </select>
+                </form>
+              </div>
+
+
+            </div>
+
+            <form id="frmConfigureProduct">
+              <input type="hidden" name="configure" value="true">
+              <input type="hidden" name="i" value="0">
+
+              <div class="row">
+                <div class="col-md-8">
+
+                  <p>Configure your desired options and continue to checkout.</p>
+
+                  <div class="product-info">
+                    <p class="product-title">DVR Live + Instant Video (1200 Kbps)</p>
+                    <p>
+                      DVR Live + Instant DVR Video with 3 months backup, Multi RTMP Servers, Customizable banner with
+                      photo album, Chat, Logo, Scrolling Text, Embed Code with HTTPS, Unlimited Viewers for Private
+                      Events. (+ Free Youtube).
+                    </p>
+                  </div>
+
+                  <div class="alert alert-danger hidden" role="alert" id="containerProductValidationErrors">
+                    <p>Please correct the following errors before continuing:</p>
+                    <ul id="containerProductValidationErrorsList"></ul>
+                  </div>
+
+
+
+
+
+
+                  <div class="sub-heading">
+                    <span>Additional Required Information</span>
+                  </div>
+
+                  <div class="field-container">
+                    <div class="form-group">
+                      <label for="customfield351">Event Date</label>
+                      <input type="date" class="form-control" (click)="eventDate($event)">
+                      <!-- <select name="customfield[351]" id="customfield351" class="form-control">
+                        <option value=" "> </option>
+                        <option value=" 01"> 01</option>
+                        <option value=" 02"> 02</option>
+                        <option value=" 03"> 03</option>
+                        <option value=" 04"> 04</option>
+                        <option value=" 05"> 05</option>
+                        <option value=" 06"> 06</option>
+                        <option value=" 07"> 07</option>
+                        <option value=" 08"> 08</option>
+                        <option value=" 09"> 09</option>
+                        <option value=" 10"> 10</option>
+                        <option value=" 11"> 11</option>
+                        <option value=" 12"> 12</option>
+                        <option value=" 13"> 13</option>
+                        <option value=" 14"> 14</option>
+                        <option value=" 15"> 15</option>
+                        <option value=" 16"> 16</option>
+                        <option value=" 17"> 17</option>
+                        <option value=" 18"> 18</option>
+                        <option value=" 19"> 19</option>
+                        <option value=" 20"> 20</option>
+                        <option value=" 21"> 21</option>
+                        <option value=" 22"> 22</option>
+                        <option value=" 23"> 23</option>
+                        <option value=" 24"> 24</option>
+                        <option value=" 25"> 25</option>
+                        <option value=" 26"> 26</option>
+                        <option value=" 27"> 27</option>
+                        <option value=" 28"> 28</option>
+                        <option value=" 29"> 29</option>
+                        <option value=" 30"> 30</option>
+                        <option value=" 31"> 31</option>
+                      </select> -->
+                      <span class="field-help-text">
+                        Please select the event date
+                      </span>
+                    </div>
+                    <!-- <div class="form-group">
+                      <label for="customfield353">Event Month&amp; Year</label>
+                      <select name="customfield[353]" id="customfield353" class="form-control">
+                        <option value=" "> </option>
+                        <option value=" January - 2022"> January - 2022</option>
+                        <option value=" February - 2022"> February - 2022</option>
+                        <option value="  March - 2022"> March - 2022</option>
+                        <option value=" April - 2022"> April - 2022</option>
+                        <option value=" May - 2022"> May - 2022</option>
+                        <option value=" June - 2022"> June - 2022</option>
+                        <option value=" July - 2022"> July - 2022</option>
+                        <option value=" August - 2022"> August - 2022</option>
+                        <option value=" September - 2022"> September - 2022</option>
+                        <option value=" October - 2022"> October - 2022</option>
+                        <option value=" November - 2022"> November - 2022</option>
+                        <option value=" December - 2022"> December - 2022</option>
+                      </select>
+                      <span class="field-help-text">
+                        Please select the event month
+                      </span>
+                    </div> -->
+                    <div class="form-group">
+                      <label for="customfield352">Event Start Time</label>
+                      <select name="customfield[352]" id="customfield352" class="form-control">
+                        <option value=" "> </option>
+                        <option value=" 12:00 AM"> 12:00 AM</option>
+                        <option value=" 12:30 AM"> 12:30 AM</option>
+                        <option value=" 01:00 AM"> 01:00 AM</option>
+                        <option value=" 01:30 AM"> 01:30 AM</option>
+                        <option value=" 02:00 AM"> 02:00 AM</option>
+                        <option value=" 02:30 AM"> 02:30 AM</option>
+                        <option value=" 03:00 AM"> 03:00 AM</option>
+                        <option value=" 03:30 AM"> 03:30 AM</option>
+                        <option value=" 04:00 AM"> 04:00 AM</option>
+                        <option value=" 04:30 AM"> 04:30 AM</option>
+                        <option value=" 05:00 AM"> 05:00 AM</option>
+                        <option value=" 05:30 AM"> 05:30 AM</option>
+                        <option value=" 06:00 AM"> 06:00 AM</option>
+                        <option value=" 06:30 AM"> 06:30 AM</option>
+                        <option value=" 07:00 AM"> 07:00 AM</option>
+                        <option value=" 07:30 AM"> 07:30 AM</option>
+                        <option value=" 08:00 AM"> 08:00 AM</option>
+                        <option value=" 08:30 AM"> 08:30 AM</option>
+                        <option value=" 09:00 AM"> 09:00 AM</option>
+                        <option value=" 09:30 AM"> 09:30 AM</option>
+                        <option value=" 10:00 AM"> 10:00 AM</option>
+                        <option value=" 10:30 AM"> 10:30 AM</option>
+                        <option value=" 11:00 AM"> 11:00 AM</option>
+                        <option value=" 11:30 AM"> 11:30 AM</option>
+                        <option value=" 12:00 PM"> 12:00 PM</option>
+                        <option value=" 12:30 PM"> 12:30 PM</option>
+                        <option value=" 01:00 PM"> 01:00 PM</option>
+                        <option value=" 01:30 PM"> 01:30 PM</option>
+                        <option value=" 02:00 PM"> 02:00 PM</option>
+                        <option value=" 02:30 PM"> 02:30 PM</option>
+                        <option value=" 03:00 PM"> 03:00 PM</option>
+                        <option value=" 03:30 PM"> 03:30 PM</option>
+                        <option value=" 04:00 PM"> 04:00 PM</option>
+                        <option value=" 04:30 PM"> 04:30 PM</option>
+                        <option value=" 05:00 PM"> 05:00 PM</option>
+                        <option value=" 05:30 PM"> 05:30 PM</option>
+                        <option value=" 06:00 PM"> 06:00 PM</option>
+                        <option value=" 06:30 PM"> 06:30 PM</option>
+                        <option value=" 07:00 PM"> 07:00 PM</option>
+                        <option value=" 07:30 PM"> 07:30 PM</option>
+                        <option value=" 08:00 PM"> 08:00 PM</option>
+                        <option value=" 08:30 PM"> 08:30 PM</option>
+                        <option value=" 09:00 PM"> 09:00 PM</option>
+                        <option value=" 09:30 PM"> 09:30 PM</option>
+                        <option value=" 10:00 PM"> 10:00 PM</option>
+                        <option value=" 10:30 PM"> 10:30 PM</option>
+                        <option value=" 11:00 PM"> 11:00 PM</option>
+                        <option value=" 11:30 PM"> 11:30 PM</option>
+                      </select>
+                      <span class="field-help-text">
+                        Please select the event start time
+                      </span>
+                    </div>
+                  </div>
+
+
+
+                  <div class="alert alert-warning info-text-sm">
+                    <i class="fas fa-question-circle"></i>
+                    Have questions? Contact our sales team for assistance. <a href="contact.php" target="_blank"
+                                                                              class="alert-link">Click here</a>
+                  </div>
+
+                </div>
+                <div class="col-md-4" id="scrollingPanelContainer">
+
+                  <div id="orderSummary" style="margin-top: 0px;">
+                    <div class="order-summary">
+
+                      <h2>Order Summary</h2>
+                      <div class="summary-container" id="producttotal">
+                        <span class="product-name">
+                          DVR Live + Instant
+                          Video (1200 Kbps)
+                        </span>
+                        <span class="product-group">LiveStreaming</span>
+
+                        <div class="clearfix">
+                          <span class="pull-left">DVR Live + Instant Video (1200 Kbps)</span>
+                          <span class="pull-right">₹600 INR</span>
+                        </div>
+
+
+
+                        <div class="summary-totals">
+                          <div class="clearfix">
+                            <span class="pull-left">Setup Fees:</span>
+                            <span class="pull-right">₹0 INR</span>
+                          </div>
+                        </div>
+
+                        <div class="total-due-today">
+                          <span class="amt">₹600 INR</span>
+                          <span>Total Due Today</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" id="btnCompleteProductConfig" routerLink="/CheckoutReview" class="g_button btn-lg">
+                        Continue
+                        <i class="fas fa-arrow-circle-right"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script>recalctotals();</script>
+
+
+
+    </div><!-- /.main-content -->
+  </div>
+  <div class="clearfix"></div>
+</section>
+
+<section id="footer">
+
+  <p>Copyright © 2022 Home Live Events Streaming Solutions. All Rights Reserved.</p>
+
+</section>

@@ -1,0 +1,101 @@
+<section id="header">
+  <div class="container">
+
+    <!-- Top Bar -->
+    <div id="top-nav">
+      <!-- Language -->
+      <!-- Login/Account Notifications -->
+      <div class="pull-right nav">
+        <a routerLink="/Login" class="quick-nav" data-toggle="popover" id="loginOrRegister" data-placement="bottom"
+           data-original-title="" title=""><!--<i class="fa fa-user"></i>--> Login</a>
+        <div id="loginOrRegisterContent" class="hidden">
+          <!-- <form action="https://accounts.viewliveevents.com/dologin.php" method="post" role="form">
+              <input type="hidden" name="token" value="3a4326e0cee39775d093b97b1c2f9cdba2181a54">
+              <div class="form-group">
+                  <input type="email" name="username" class="form-control" placeholder="Email Address"
+                      required="">
+              </div>
+              <div class="form-group">
+                  <div class="input-group">
+                      <input type="password" name="password" class="form-control" placeholder="Password"
+                          autocomplete="off" required="">
+                      <span class="input-group-btn">
+                          <input type="submit" class="btn btn-primary" value="Login">
+                      </span>
+                  </div>
+              </div>
+              <label class="checkbox-inline">
+                  <input type="checkbox" name="rememberme"> Remember Me • <a href="/pwreset.php">Forgot
+                      Password?</a>
+              </label>
+          </form> -->
+        </div>
+      </div>
+      <!-- Shopping Cart -->
+      <div class="pull-right nav">
+        <a href="/cart.php?a=view" class="quick-nav">
+          <!--<i class="fa fa-shopping-cart"></i>--> <span class="hidden-xs">
+            View
+            Cart (
+          </span><span id="cartItemCount">0</span><span class="hidden-xs">)</span>
+        </a>
+      </div>
+
+
+    </div>
+
+    <a href="/index.php"><img src="/assets/images/website_logo.png" style=" width: 11rem;" alt="ViewLiveEvents Streaming Solutions"></a>
+
+  </div>
+</section>
+
+<nav>
+  <div class="wrapper">
+   
+    <input type="radio" name="slider" id="menu-btn">
+    <input type="radio" name="slider" id="close-btn">
+    <ul class="nav-links">
+      <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#" class="desktop-item">Store</a>
+        <input type="checkbox" id="showDrop">
+        <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+        <ul class="drop-menu">
+          <li><a href="#">Browse All</a></li>
+          <li><a href="#">Live Streaming</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Announcements</a></li>
+      <li><a href="#">Knowledgebase</a></li>
+      <li><a href="#">Network Status</a></li>
+      <li><a href="#">Affiliates</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+  </div>
+</nav>
+
+
+
+<!--<section id="main-menu">
+
+    <nav id="nav" class="navbar navbar-default navbar-main" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+
+        </div>
+    </nav>
+
+</section>-->
